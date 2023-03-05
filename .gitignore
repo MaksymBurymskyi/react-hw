@@ -4,6 +4,7 @@
 /node_modules
 ./react-app/node_modules
 ./hw38/react-app/node_modules
+/hw38/react-app/node_modules
 /.pnp
 .pnp.js
 
