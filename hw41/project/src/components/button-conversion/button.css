@@ -1,0 +1,29 @@
+.card__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 14px 26px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+.card__button-conversion {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.card__button-conversion:hover {
+  box-shadow: inset 0px 0px 5px 5px rgba(82, 82, 82, 0.8);
+}
+.card__button-conversion:active {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+.card__button-extra {
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.card__button-extra:hover {
+  box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.card__button-extra:active {
+  background-color: rgba(34, 34, 34, 0.2);
+}

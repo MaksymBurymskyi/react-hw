@@ -1,0 +1,47 @@
+:root {
+  --main-color: #222;
+  --white-color: #fff;
+}
+
+@import url(./reset.css);
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../public/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../public/fonts/Montserrat-Regular.woff") format("woff"),
+    url("../public/fonts/Montserrat-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../public/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../public/fonts/Montserrat-Medium.woff") format("woff"),
+    url("../public/fonts/Montserrat-Medium.ttf") format("ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../public/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../public/fonts/Montserrat-Bold.woff") format("woff"),
+    url("../public/fonts/Montserrat-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+}
+#root {
+  background: var(--white-color);
+}

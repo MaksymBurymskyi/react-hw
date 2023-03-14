@@ -1,0 +1,23 @@
+.card__icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.card__saleIcon {
+  background: #ed5952;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  color: var(--white-color);
+  margin-bottom: 10px;
+  padding-top: 18px;
+}
+.card__heartIcon {
+  background-color: var(--white-color);
+  padding-top: 12px;
+}
+.card__heartIcon:hover {
+  border: #ffd6d6 1px solid;
+}
