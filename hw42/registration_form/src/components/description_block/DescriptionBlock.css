@@ -1,0 +1,30 @@
+.descrBlock {
+  width: 55.5%;
+  background: url(./../../../public/girl.jpg) center center / auto no-repeat;
+  color: #ffffff;
+  position: relative;
+}
+.descrBlock__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 100px 0 273px 100px;
+}
+.descrBlock__description {
+  width: 598px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  margin-left: 100px;
+}
+.descrBlock__sign {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  position: absolute;
+  left: 100px;
+  bottom: 45px;
+}
+.descrBlock__sign span {
+  display: block;
+}
