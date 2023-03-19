@@ -43,7 +43,10 @@ class FormBlock extends Component {
     event.preventDefault()  
 
     if (this.state.email && !this.state.checkNameResult && this.state.checPasswordkResult) {
-      event.target.form.submit()
+      // event.target.form.submit()
+      console.log(event.target.form.name.value);
+      console.log(event.target.form.email.value);
+      console.log(event.target.form.password.value);
     } else {
       return alert('Перевірте правильність вводу')
     }

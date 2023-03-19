@@ -3,18 +3,6 @@ import './BlockWithForm.css';
 import FormBlock from "../form_block/FormBlock";
 
 class BlockWithForm extends Component {
-  constructor(){
-    super();
-    this.state = {
-      checkNameResult: 'too short name',
-      checkEmailResult: '',
-      email: false,
-      checPasswordkResult: '',
-      styleNameBgd: 'transparent',
-      styleEmailBgd: 'transparent',
-      stylePasswordBgd: 'transparent',
-    }; 
-  }
   
   render() {
     return (
