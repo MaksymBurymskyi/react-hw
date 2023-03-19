@@ -23,13 +23,13 @@
 label {
   cursor: revert;
 }
-input {
+.formBlock__inpField {
   width: 100%;
   border-bottom: 1px solid black;
   line-height: 36px;
   margin-bottom: 6px;
 }
-.formBlock__inpIndicator {
+.formBlock__form div {
   width: 60%;
   font-size: 14px;
   height: 24px;
@@ -37,6 +37,7 @@ input {
   margin: auto;
   color: white;
   border-radius: 6px;
+  background: rgba(255, 0, 0, 0.8);
 }
 button {
   width: 100%;
@@ -47,7 +48,7 @@ button {
   cursor: pointer;
 }
 button:active {
-  box-shadow: inset 0 0 5px 1px #868585;
+  box-shadow: inset 0 0 5px 3px #999999;
 }
 
 .formBlock__submitBtn {
