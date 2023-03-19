@@ -1,3 +1,20 @@
+.formBlock {
+  padding: 100px;
+  color: black;
+  letter-spacing: 0.02em;
+  width: 44.5%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.formBlock__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+.formBlock__subTitle {
+  font-weight: 300;
+  color: #8d8d8d;
+}
 .formBlock__form {
   display: flex;
   flex-direction: column;
@@ -51,4 +68,12 @@ button:active {
   position: absolute;
   top: 21px;
   left: 21%;
+}
+.formBlock__signInLink {
+  text-align: center;
+}
+.formBlock__signInLink a {
+  text-decoration: none;
+  color: #3ec1f3;
+  padding-left: 15px;
 }

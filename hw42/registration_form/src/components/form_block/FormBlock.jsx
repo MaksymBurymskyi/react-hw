@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import './FormBlock.css';
 
-
-
 class FormBlock extends Component {
   constructor(){
     super();
@@ -14,8 +12,7 @@ class FormBlock extends Component {
       styleNameBgd: 'transparent',
       styleEmailBgd: 'transparent',
       stylePasswordBgd: 'transparent',
-    };
-    
+    }; 
   }
   
  checkName = (event) => {
@@ -67,25 +64,20 @@ class FormBlock extends Component {
   
   render() {
     return (
-      <div className="formBlock">
-        <h2 className="formBlock__title">Create an account</h2>
-        <p className="formBlock__subTitle">Let’s get started with your 30 days free trial</p>
-        <form className="formBlock__form" action="#">
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" onKeyUp={this.checkName} />
-          <div className="formBlock__inpIndicator" style={{background: this.state.styleNameBgd}}>{this.state.checkNameResult }</div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" onChange={this.checkEmail}/>
-          <div className="formBlock__inpIndicator" style={{background: this.state.styleEmailBgd}}>{this.state.checkEmailResult }</div>
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" id="password" onChange={this.checkPassword}/>
-          <div className="formBlock__inpIndicator" style={{background: this.state.stylePasswordBgd}}>{this.state.checPasswordkResult }</div>
-          <button className="formBlock__submitBtn" type="submit" onClick={this.handleSubmit}>Create Account</button>
-          <button className="formBlock__signUpBtn" type="button">Sign up with Google</button>
-        </form>
-        <p className="formBlock__signInLink">Already have an account?<a href="/">Sign in</a></p>
-      </div> 
-      );
+      <form className="formBlock__form" action="#">
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" id="name" onKeyUp={this.checkName} />
+        <div className="formBlock__inpIndicator" style={{background: this.state.styleNameBgd}}>{this.state.checkNameResult }</div>
+        <label htmlFor="email">Email</label>
+        <input type="email" name="email" id="email" onChange={this.checkEmail}/>
+        <div className="formBlock__inpIndicator" style={{background: this.state.styleEmailBgd}}>{this.state.checkEmailResult }</div>
+        <label htmlFor="password">Password</label>
+        <input type="password" name="password" id="password" onChange={this.checkPassword}/>
+        <div className="formBlock__inpIndicator" style={{background: this.state.stylePasswordBgd}}>{this.state.checPasswordkResult }</div>
+        <button className="formBlock__submitBtn" type="submit" onClick={this.handleSubmit}>Create Account</button>
+        <button className="formBlock__signUpBtn" type="button">Sign up with Google</button>
+      </form>   
+    );
   }
 }
 
