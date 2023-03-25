@@ -1,0 +1,33 @@
+.blog__wrapper {
+  margin: auto;
+}
+.blog__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+.blog__filter {
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  li {
+    cursor: pointer;
+  }
+}
+
+.blog__cardsBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+.active {
+  color: #d4a373;
+}

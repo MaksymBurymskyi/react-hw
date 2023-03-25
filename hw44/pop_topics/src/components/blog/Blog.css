@@ -1,0 +1,14 @@
+.blog {
+  background: #ffffff;
+  padding: 70px 7%;
+}
+@media (max-width: 992px) {
+  .blog {
+    padding: 50px 5%;
+  }
+}
+@media (max-width: 768px) {
+  .blog {
+    padding: 5% 2.5%; /* min 8px with a width of 320px */
+  }
+}
