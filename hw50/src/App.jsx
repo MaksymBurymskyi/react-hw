@@ -5,6 +5,7 @@ import Blog from './components/blog/Blog'
 import Header from './components/header/Header';
 import About from './components/about/About';
 import NotFound from './components/notFound/NotFound';
+import Article from './components/article/Article';
 import {
   BrowserRouter, 
   Routes, 
@@ -33,19 +34,16 @@ function App() {
     return <div>Contacts</div>
   }
 
-  // function NotFound() {
-  //    console.log('?? 404 - Not Found ??');
-  //   return <div>404 - Not Found</div>
-  // }
-
   return (<>
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='/blog/Blog/Blog' element={<Blog />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='*' element={<Blog />} />
         <Route path='/About' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
-        <Route path='*' element={<NotFound />}/>
+        <Route path='/article/:id' element={<Article />} />
+        <Route path='/404' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </>)

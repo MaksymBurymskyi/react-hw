@@ -3,11 +3,11 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import CardItem from '../cardItem/CardItem';
-import Article from '../article/Article';
+// import Article from '../article/Article';
 import {
   // BrowserRouter, 
-  Routes, 
-  Route, 
+  // Routes, 
+  // Route, 
   // Switch,
   Link, 
   // NavLink, 
@@ -57,23 +57,24 @@ function CardsWrapper() {
     </ul>
     <div className='blog__cardsBlock'>
        
-      {filteredCards.map((card) =>  <Link to='/article/Article/Article'> <CardItem
-        key = {card.id}
-        imageUrl = {card.image}
-        publishedDate = {card.published_at}
-        title = {card.title}
-        description = {card.description}
-        authorAvatar = {card.author.avatar}
-        authorName = {card.author.name}
-        authorPosition = {card.author.position}
-        category = {card.category.title}
-      >   
-      </CardItem></Link>
+      {filteredCards.map((card) =>
+        <Link key={card.id} to={`/article/${card.id}`}>
+          <CardItem
+          key = {card.id}
+          imageUrl = {card.image}
+          publishedDate = {card.published_at}
+          title = {card.title}
+          description = {card.description}
+          authorAvatar = {card.author.avatar}
+          authorName = {card.author.name}
+          authorPosition = {card.author.position}
+          category = {card.category.title}
+          >   
+          </CardItem>
+        </Link>
       )}
 
-      <Routes>
-        <Route path='/article/Article/Article' element={<Article />} />
-      </Routes>
+      
     </div>
   </section>
 }
