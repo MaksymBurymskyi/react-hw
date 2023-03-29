@@ -1,0 +1,11 @@
+.menu {
+  color: #e5e5e5;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.menuLinkActive {
+  border-bottom: 1px solid orange;
+  color: white;
+}

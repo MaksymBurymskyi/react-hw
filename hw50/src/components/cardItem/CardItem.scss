@@ -1,0 +1,70 @@
+.cardItem {
+  width: 310px;
+  height: 565px;
+  padding: 300px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    height: 50px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.cardItem__date {
+  font-size: 12px;
+  line-height: 15px;
+  color: #6c757d;
+}
+.cardItem__description {
+  height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #6c757d;
+  line-height: 20px;
+}
+.cardItem__line {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 8px 0;
+}
+.cardItem__author {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  .cardItem__authorAvatar {
+    height: 50px;
+    width: 50px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .cardItem__authorName {
+    font-weight: 700;
+  }
+  .cardItem__authorPosition {
+    color: #6c757d;
+  }
+}
+.cardItem__category {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 10px;
+  line-height: 12px;
+  color: white;
+}
