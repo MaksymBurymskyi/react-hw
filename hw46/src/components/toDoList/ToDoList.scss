@@ -1,0 +1,14 @@
+.toDoList {
+  width: 900px;
+  margin: 60px auto;
+  padding: 48px 70px 48px 74px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  .toDoList__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
