@@ -23,13 +23,28 @@ export default function Article( ) {
   return <div className='article' key={id}>
 
     {articles.map((article) =>       
-      (+article.id === +id) && <>
-        <div className='article__dateTime'><span> {new Date(article.published_at).toLocaleDateString()} </span> - <span>{article.reading_time} minutes</span></div> 
-        <div className="article__wrapper">
-          <h3>{article.title}</h3>
-          <div className="article__text">{article.text }</div>      
+      (+article.id === +id) && <div key={article.id}>
+        <div className="article__titleBlock" style={{ background: `url(${article.image}) no-repeat top/100% 100%` }}>
+          <h3 className="article__title">{article.title}</h3>
+          <p className="article__subTitle">{ article.description}</p>
         </div>
-      </>
+        <div className="article__block">
+          <div className='article__dateTime'><span> {new Date(article.published_at).toLocaleDateString()} </span> - <span>{article.reading_time} minutes</span>
+          </div> 
+          <div className="article__wrapper">
+            <div className="article__text">{article.text}</div>  
+            <div className='article__wrapperCategory'><span className='article__category'>{article.category.title}</span></div>
+            <div className="article__line"></div>
+            <div className='cardItem__author'>
+              <div className='cardItem__authorAvatar'><img src={article.author.avatar} alt="author" /></div>
+              <div>
+                <p className='cardItem__authorName'>{ article.author.name}</p>
+                <p className='cardItem__authorPosition'>{ article.author.position}</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
     )} 
   </div>
 };

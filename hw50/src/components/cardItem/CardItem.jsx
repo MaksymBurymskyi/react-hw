@@ -1,14 +1,4 @@
 import './CardItem.scss';
-import {
-  // BrowserRouter, 
-  // Routes, 
-  // Route, 
-  // Switch,
-  // Link, 
-  // NavLink, 
-  // useParams,
-  // useNavigate
-} from 'react-router-dom';
 
 export default function CardItem({ id, title, imageUrl, publishedDate, description, authorAvatar, authorName, authorPosition, category }) {
   
