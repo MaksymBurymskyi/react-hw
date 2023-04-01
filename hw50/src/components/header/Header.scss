@@ -1,11 +1,25 @@
-.menu {
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
   color: #e5e5e5;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #f8f9fa;
+}
+.menu {
   display: flex;
   gap: 20px;
-}
-.menuLinkActive {
-  border-bottom: 1px solid orange;
-  color: white;
+
+  .menuLinkActive {
+    border-bottom: 1px solid orange;
+    color: white;
+  }
 }
