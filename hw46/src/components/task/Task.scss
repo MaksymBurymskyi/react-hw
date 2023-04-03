@@ -2,13 +2,16 @@
   height: 64px;
   position: relative;
   cursor: pointer;
-  padding: 22px 27px;
 
   &:hover {
     background: #f8fafc;
     border-radius: 6px;
   }
-
+  &__wrap {
+    width: 90%;
+    height: 100%;
+    padding: 22px 27px;
+  }
   &__submitBtn {
     width: 24px;
     height: 24px;
@@ -18,6 +21,7 @@
     position: absolute;
     right: 24px;
     top: 20px;
+    z-index: 11;
 
     &::after {
       content: "";
@@ -41,6 +45,13 @@
     &-checked {
       background: #f1f4ff;
       border: 1px solid #3056d3;
+      position: relative;
+      &::after {
+        content: url(../../img/vector.svg);
+        position: absolute;
+        top: 7px;
+        left: 5px;
+      }
     }
   }
 

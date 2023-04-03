@@ -62,4 +62,9 @@
     flex-direction: column;
     gap: 12px;
   }
+  &__quantity {
+    margin-top: 45px;
+    font-size: 10px;
+    text-align: right;
+  }
 }
