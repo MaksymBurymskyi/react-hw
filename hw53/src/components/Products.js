@@ -10,41 +10,41 @@ const Products = () => {
   const dispatchFunc = useDispatch();
 
   const incrementCoffee = () => {
-    dispatchFunc({ type: 'incrementCoffee' })
-  }
+    dispatchFunc({ type: 'incrementCoffee' });
+  };
   const decrementCoffee = () => {
-    dispatchFunc({ type: 'decrementCoffee' })
-  }
+    dispatchFunc({ type: 'decrementCoffee' });
+  };
   const increaseCoffee = () => {
-    dispatchFunc({ type: 'increaseCoffee', number: 10 })
-  }
+    dispatchFunc({ type: 'increaseCoffee', number: 10 });
+  };
 
   const incrementSugar = () => {
-    dispatchFunc({ type: 'incrementSugar' })
-  }
+    dispatchFunc({ type: 'incrementSugar' });
+  };
   const decrementSugar = () => {
-    dispatchFunc({ type: 'decrementSugar' })
-  }
+    dispatchFunc({ type: 'decrementSugar' });
+  };
   const increaseSugar = () => {
-    dispatchFunc({ type: 'increaseSugar', number: 10 })
-  }
+    dispatchFunc({ type: 'increaseSugar', number: 10 });
+  };
 
   return (
     <>
-      <div className='product'>
+      <div className="product">
         <span>{`Coffee: ${coffee}`}</span>
         <button onClick={incrementCoffee}>+</button>
         <button onClick={decrementCoffee}>-</button>
         {isLoggedIn && <button onClick={increaseCoffee}>+10</button>}
       </div>
-      <div className='product'>
+      <div className="product">
         <span>{`Sugar: ${sugar}`}</span>
         <button onClick={incrementSugar}>+</button>
         <button onClick={decrementSugar}>-</button>
         {isLoggedIn && <button onClick={increaseSugar}>+10</button>}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
